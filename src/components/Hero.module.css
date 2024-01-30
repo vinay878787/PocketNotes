@@ -1,0 +1,95 @@
+.container {
+    width: 80vw;
+    background-color: #dae5f5;
+    position: relative;
+    overflow-y: auto;
+    z-index: 9;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #001f8b;
+    font-weight: 600;
+    
+  }
+  
+  .messageContainer {
+    width: 100vw;
+    height: 30vh;
+    padding: 20px;
+    background-color: #001f8b;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .input {
+    width: 72vw;
+    height: 22vh;
+    resize: none;
+    outline: none ;
+    padding:5px;
+  }
+  .bsend {
+    width: 2%;
+    z-index: 999;
+    position: fixed;
+    bottom: 40px;
+    right: 45px;
+  }
+  
+  .logoContainer {
+    width: 15%;
+    padding: 15px;
+    border-radius: 60%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innerContainer{
+    width:50vh;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    margin-left:10px;
+    gap:10px;
+  }
+  
+  .groupName{
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  textarea::placeholder {
+    font-size: 20px;
+  }
+  .arrow{
+    width:4vw;
+  }
+
+  @media screen and (max-width:850px){
+    .container{
+       width:90vw;
+    }
+    .bsend{
+      width:4vw;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    .container{
+      width:100vw;
+   }
+   .messageContainer{
+    height: 30vh;
+   }
+   .input{
+    width:88vw;
+    height:45vh;
+   }
+  }

@@ -1,0 +1,165 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f2f2fbf;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+form {
+  width: 33vw;
+  padding: 10px;
+}
+.container {
+  position: fixed;
+  top: 15vw;
+  left: 20vw;
+  width: 40vw;
+  height: 40vh;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 1vw;
+}
+.heading {
+  padding: 10px 0 10px 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.groupContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.colourContainer {
+  display: flex;
+  width: 30vw;
+  gap: 10px;
+}
+.colourChoice1,
+.colourChoice2,
+.colourChoice3,
+.colourChoice4,
+.colourChoice5,
+.colourChoice6 {
+  width: 1.5vw;
+  height: 3vh;
+  border-radius: 50%;
+}
+
+.colourChoice1 {
+  background-color: #b38bfa;
+}
+.colourChoice2 {
+  background-color: #ff79f2;
+}
+.colourChoice3 {
+  background-color: #43e6fc;
+}
+.colourChoice4 {
+  background-color: #f19576;
+}
+.colourChoice5 {
+  background-color: #0047ff;
+}
+.colourChoice6 {
+  background-color: #6691ff;
+}
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.btn {
+  width: 6vw;
+  padding: 5px;
+  background-color: #001f8b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.4vw;
+}
+
+.inputBox {
+  width: 20vw;
+  padding: 8px;
+  border-radius: 2vw;
+  margin-left: 20px;
+  border: 2px solid #cccccc;
+}
+.borderColor {
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 850px) {
+  form {
+    width: 60vw;
+  }
+  .container{
+    width:60vw;
+    top:20vw;
+  }
+
+  .heading {
+    padding: 10px 0 10px 15px;
+    font-size: 1rem;
+  }
+  .groupContainer {
+    font-size: 0.7rem;
+  }
+  .inputBox {
+    width: 30vw;
+    padding: 8px;
+    font-size: 0.6rem;
+  }
+  .colourContainer{
+    width: 80%;
+  }
+  .colourChoice1,
+.colourChoice2,
+.colourChoice3,
+.colourChoice4,
+.colourChoice5,
+.colourChoice6 {
+  width: 25vw;
+  height: 4vh;
+  border-radius: 50%;
+}
+.btn{
+  width:20vw;
+}
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80vw;
+    padding:0px;
+  }
+  .container{
+    width:75%;
+    top:50vw;
+    left:15vw;
+  }
+  .colourContainer{
+    width:60vw;
+  }
+  .groupContainer {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .inputBox {
+    width: 26vw;
+    padding: 5px;
+    font-size: 0.6rem;
+  }
+  .heading{
+    font-size: 0.9rem;
+  }
+  
+}
