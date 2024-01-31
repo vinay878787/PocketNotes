@@ -1,5 +1,5 @@
-import backgroundImage from "/bg1.png"
-import lockImg from "/lock.svg"
+import backgroundImage from "../assets/bg1.png"
+import lockImg from "../assets/lock.svg"
 import styles from "./Welcome.module.css";
 
 function Welcome() {
