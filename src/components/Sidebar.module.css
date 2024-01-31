@@ -2,10 +2,10 @@
   width: 25vw;
   height: 100vh;
   background-color: #fff;
-  overflow-y: scroll;
   overflow-x: hidden;
   font-weight: 600;
 }
+
 .innerContainer {
   width: 90vw;
   height: 90vh;
@@ -13,12 +13,14 @@
   flex-direction: column;
   cursor: pointer;
 }
+
 .heading {
   text-align: center;
   position: sticky;
   top: 10px;
   z-index: 99;
 }
+
 .createBtn {
   position: fixed;
   bottom: 2vw;

@@ -2,9 +2,9 @@ import { useContext, useState, useEffect } from "react";
 import { IndexContext } from "../store/IndexContext";
 import styles from "./Hero.module.css";
 import Message from "./Message";
-import backBtn from "../../src/assets/arrow.svg"
-import sendEBtn from "../../src/assets/blueSend.svg"
-import sendDBtn from "../../src/assets/bSend.svg"
+import backBtn from "/arrow.svg"
+import sendEBtn from "/blueSend.svg"
+import sendDBtn from "/bSend.svg"
 
 function Hero() {
   const [input, setInput] = useState("");

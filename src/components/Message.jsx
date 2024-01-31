@@ -4,6 +4,7 @@ import styles from "./Message.module.css";
 function Message({ messages }) {
 
   return (
+    <>
     <div className={styles.mainContainer}>
       {messages.map((message, index) => (
         <div key={index} className={styles.container}>
@@ -12,6 +13,7 @@ function Message({ messages }) {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

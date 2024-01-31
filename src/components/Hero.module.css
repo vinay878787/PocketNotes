@@ -2,7 +2,6 @@
     width: 80vw;
     background-color: #dae5f5;
     position: relative;
-    overflow-y: auto;
     z-index: 9;
   }
   
