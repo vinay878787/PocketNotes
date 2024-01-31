@@ -1,9 +1,11 @@
+import backgroundImage from "../assets/books.svg"
+import lockImg from "../assets/lock.svg"
 import styles from "./Welcome.module.css";
 
 function Welcome() {
   return (
     <div className={styles.container}>
-      <img src="../src/images/bg1.png" className={styles.bookImg}></img>
+      <img src={backgroundImage} className={styles.bookImg}></img>
 
       <h1 className={styles.mainHeading}>Pocket Notes</h1>
 
@@ -13,7 +15,7 @@ function Welcome() {
       </p>
 
       <div className={styles.lockMsg}>
-        <img src="../src/images/lock.svg" className={styles.lockImg}></img>
+        <img src={lockImg} className={styles.lockImg}></img>
         <span className={styles.endMsg}>end-to-end encrypted</span>
       </div>
     </div>

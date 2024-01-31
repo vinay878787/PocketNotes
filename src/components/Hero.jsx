@@ -1,7 +1,10 @@
-import React, { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { IndexContext } from "../store/IndexContext";
 import styles from "./Hero.module.css";
 import Message from "./Message";
+import backBtn from "../assets/arrow.svg"
+import sendEBtn from "../assets/bluesend.svg"
+import sendDBtn from "../assets/bsend.svg"
 
 function Hero() {
   const [input, setInput] = useState("");
@@ -69,7 +72,7 @@ function Hero() {
           <div className={styles.innerContainer}>
             {isMobile && (
               <img
-                src="../src/images/arrow.svg"
+                src={backBtn}
                 className={styles.arrow}
                 onClick={() => setClickedIndex(null)}
                 alt="Back"
@@ -102,14 +105,14 @@ function Hero() {
             ></textarea>
             {input.length !== 0 ? (
               <img
-                src="../src/images/blueSend.svg"
+                src={sendEBtn}
                 className={styles.bsend}
                 onClick={handleSubmit}
                 alt="SendDisabled"
               />
             ) : (
               <img
-                src="../src/images/bSend.svg"
+                src={sendDBtn}
                 className={styles.bsend}
                 onClick={handleSubmit}
                 alt="SendEnabled"

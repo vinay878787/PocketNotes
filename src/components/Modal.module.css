@@ -36,6 +36,7 @@ form {
   justify-content: center;
   padding: 20px;
   gap: 20px;
+  font-weight:600;
 }
 .colourContainer {
   display: flex;
@@ -112,6 +113,7 @@ form {
   }
   .groupContainer {
     font-size: 0.7rem;
+   
   }
   .inputBox {
     width: 30vw;
@@ -138,28 +140,46 @@ form {
 
 @media screen and (max-width: 500px) {
   form {
-    width: 80vw;
+    width: 90vw;
     padding:0px;
   }
   .container{
-    width:75%;
+    width:90%;
+    height:30%;
     top:50vw;
-    left:15vw;
+    left:5vw;
   }
   .colourContainer{
     width:60vw;
   }
   .groupContainer {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    
   }
   .inputBox {
-    width: 26vw;
-    padding: 5px;
+    width: 39vw;
+    padding: 2px;
     font-size: 0.6rem;
   }
   .heading{
     font-size: 0.9rem;
   }
+  .btnContainer{
+    justify-content: center; 
+  }
+  .btn{
+    width:90%;
+  }
+  .colourChoice1,
+.colourChoice2,
+.colourChoice3,
+.colourChoice4,
+.colourChoice5,
+.colourChoice6 {
+  width: 8vw;
+  height: 2.5vh;
+  border-radius: 50%;
+}
   
 }
